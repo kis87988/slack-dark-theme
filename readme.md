@@ -68,7 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-Update `<PATH AND FILENAME OR URL TO CSS FILE OF YOUR CHOICE>` to either an Web URL or file on your system. The repo includes two CSS files you can choose from or you can make your own.
+Update `<PATH AND FILENAME OR URL TO CSS FILE OF YOUR CHOICE>` to either an Web URL or file on your system. The repo includes dark.css which you are free to use or you can make your own.
+
+Sidebar should be configured seperately and this can be done per slack server.
+Follow instructions here: https://slackthemes.net/#/zebra
 
 That's it! Restart Slack and see how well it works.
 
