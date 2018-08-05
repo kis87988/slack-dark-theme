@@ -15,7 +15,7 @@ Find your Slack's application directory.
 * Linux: `/usr/lib/slack/` (Debian-based)
 
 
-Open up `resources\app.asar.unpacked\src\static\ssb-interop.js`
+Open up `resources/app.asar.unpacked/src/static/ssb-interop.js`
 
 At the very bottom, add
 
@@ -27,18 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
    let webviews = document.querySelectorAll(".TeamView webview");
 
    // Fetch our CSS in parallel ahead of time
-   const cssPath = '<PATH AND FILENAME OR URL TO CSS FILE OF YOUR CHOICE>';
+   const cssPath = 'https://gitlab.com/janis.puris/slack-dark-theme/blob/master/dark.css';
    let cssPromise = fetch(cssPath).then(response => response.text());
-
-   let customCustomCSS = `
-   :root {
-      /* Modify these to change your theme colors: */
-      --primary: #CCC;
-      --text: #999;
-      --background: #222;
-      --background-elevated: #444;
-   }
-   `
 
    // Insert a style tag into the wrapper view
    cssPromise.then(css => {
@@ -67,8 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
    });
 });
 ```
-
-Update `<PATH AND FILENAME OR URL TO CSS FILE OF YOUR CHOICE>` to either an Web URL or file on your system. The repo includes dark.css which you are free to use or you can make your own.
 
 Sidebar should be configured seperately and this can be done per slack server.
 Follow instructions here: https://slackthemes.net/#/zebra

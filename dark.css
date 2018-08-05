@@ -16,8 +16,8 @@ limitations under the License.
 
 :root {
    /* Modify these to change your theme colors: */
-   --primary: #09F;
-   --text: #888;
+   --primary: #FFFFFF;
+   --text: #FFFFFF;
    --background: #111;
    --background-elevated: #222;
 
@@ -28,9 +28,15 @@ limitations under the License.
 
    --border-dim: #666;
    --border-bright: var(--primary);
+   
+   --color-mention: #A4CD5F;
+   --badge-background: var(--color-mention);
+   --background-group-mention: var(--color-mention);
+   --text-channel-unread: var(--color-mention);
 
+   --text-dark: #000000;
    --text-bright: #888;
-   --text-special: var(--primary);
+   --text-special: #0091D7;
 
    --scrollbar-background: #000;
    --scrollbar-border: var(--primary);
@@ -100,7 +106,8 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .p-channel_sidebar__quickswitcher:hover {
-   color: var(--text-bright) !important;
+   color: var(--text-channel-unread) !important;
+   /* background-color: var(--border-bright) !important; */
 }
 
 /*broken*/
@@ -130,7 +137,7 @@ ts-jumper input[type="text"],
     background-color: var(--background-hover);
 }
 .c-message--light .c-message__sender .c-message__sender_link {
-    color: var(--text);
+    color: var(--text-bright) !important;
 }
 .c-message_list__day_divider__line {
     border-top: 1px solid var(--border-dim);
@@ -167,6 +174,10 @@ ts-jumper input[type="text"],
     background: var(--background-elevated);
 }
 
+.c-member_slug--mention {
+    color: var(--color-mention) !important;
+}
+
 .channel_header, #col_messages, #footer {
    box-shadow: none;
 }
@@ -184,7 +195,7 @@ ts-jumper input[type="text"],
 /* channel list */
 .p-channel_sidebar__channel,
 .p-channel_sidebar__link {
-  border-radius: 0 15px 15px 0;
+  /* border-radius: 0 15px 15px 0;*/
   height: 24px !important;
 }
 
@@ -202,7 +213,7 @@ ts-jumper input[type="text"],
 .p-channel_sidebar__link--selected:hover {
    background-color: var(--background) !important;
    border: solid var(--border-bright);
-   border-width: 1px 1px 1px 0;
+   border-width: 1px 0px 1px 0;
 }
 
 .p-channel_sidebar__channel:hover,
@@ -220,7 +231,7 @@ ts-jumper input[type="text"],
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected:hover {
    border: solid var(--border-dim);
-   border-width: 1px 1px 1px 0;
+   border-width: 1px 0px 1px 0;
 }
 
 /*broken*/
@@ -253,9 +264,9 @@ li.active[class] span,
 .p-channel_sidebar__badge,
 .p-channel_sidebar__banner--mentions {
    /*inverted because important*/
-   background-color: var(--border-bright) !important;
-   border-color: var(--text-bright);
-   color: var(--text-bright);
+   background-color: var(--badge-background) !important;
+   border-color: var(--text-dark);
+   color: var(--text-dark);
 }
 
 /*also add border to unread count for individual channels*/
@@ -516,7 +527,7 @@ code {
 }
 
 a, a:link, a:visited{
-  color: var(--text-special);
+  color: var(--text-special) !important;
 }
 ts-message a .mention{
   color: var(--text-special) !important;
@@ -1070,7 +1081,7 @@ ts-jumper ts-jumper-container {
 /* app badge */
 .c-app_badge, .c-app_label {
     color: var(--text-bright);
-    background-color: var(--background-elevated);
+    background-color: var(--badge-background);
 }
 
 /* tabs */
@@ -1468,8 +1479,13 @@ nav {
 .tab_complete_ui ul.type_members .unify_broadcast {
 	color: var(--text);	
 }
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
-    background: var(--background-elevated);
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention:hover, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
+    background: var(--background-group-mention);
+}
+
+.c-mrkdwn__mention {
+    background: var(--background) !important;
+    color: var(--color-mention) !important;
 }
 
 /* message thumbs up */
