@@ -14,7 +14,6 @@ Find your Slack's application directory.
 * Mac: `/Applications/Slack.app/Contents/`
 * Linux: `/usr/lib/slack/` (Debian-based)
 
-
 Open up `resources/app.asar.unpacked/src/static/ssb-interop.js`
 
 At the very bottom, add
@@ -27,8 +26,14 @@ document.addEventListener("DOMContentLoaded", function() {
    let webviews = document.querySelectorAll(".TeamView webview");
 
    // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://gitlab.com/janis.puris/slack-dark-theme/blob/master/dark.css';
+   const cssPath = '<URL_TO_CSS_FILE>';
    let cssPromise = fetch(cssPath).then(response => response.text());
+
+   let customCustomCSS = `
+   :root {
+         /* Your custom CSS overrides */
+   }
+   `
 
    // Insert a style tag into the wrapper view
    cssPromise.then(css => {
@@ -57,6 +62,11 @@ document.addEventListener("DOMContentLoaded", function() {
    });
 });
 ```
+
+Last bit is for you to host the CSS theme file, then use the URL to this file by replacing `<URL_TO_CSS_FILE>`.
+
+You can add your own overrides to any CSS element used by slack or the provided CSS theme file.
+Simply add your CSS below `/* Your custom CSS properties below */`.
 
 Sidebar should be configured seperately and this can be done per slack server.
 Follow instructions here: https://slackthemes.net/#/zebra
