@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
    let webviews = document.querySelectorAll(".TeamView webview");
 
    // Fetch our CSS in parallel ahead of time
-   const cssPath = '<URL_TO_CSS_FILE>';
+   const cssPath = 'https://glcdn.githack.com/janis.puris/slack-dark-theme/raw/master/dark.css';
    let cssPromise = fetch(cssPath).then(response => response.text());
 
    let customCustomCSS = `
@@ -62,8 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
    });
 });
 ```
-
-Last bit is for you to host the CSS theme file, then use the URL to this file by replacing `<URL_TO_CSS_FILE>`.
 
 You can add your own overrides to any CSS element used by slack or the provided CSS theme file.
 Simply add your CSS below `/* Your custom CSS properties below */`.
