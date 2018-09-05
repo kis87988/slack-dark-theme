@@ -1504,8 +1504,14 @@ ts-jumper .p-jumper__help {
 .c-alert--inline, .c-alert--nested_box {
     color: var(--text);
 }
-/* user groups */
 
+/* user groups */
 #user_groups_container .mention {
     background-color: var(--background-hover);
 }
+
+/* Hide title bar */
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+  }
