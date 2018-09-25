@@ -276,8 +276,8 @@ li.active[class] span,
 
 #client_body::before, #client_body:not(.onboarding):before {
   border-bottom: 1px solid var(--border-dim) !important;
-  background: var(--background);
-  box-shadow: none;
+  background: var(--background) !important;
+  box-shadow: none !important;
 }
 
 #client_body, #messages_container.has_top_messages_banner:before {
