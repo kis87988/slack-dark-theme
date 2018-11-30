@@ -1387,6 +1387,9 @@ nav {
 .c-message--highlight, .c-message--highlight_yellow_bg {
     background: var(--background);
 }
+.c-message__editor__input--legacy.focus {
+    border-color: var(--color-mention)
+}
 /* new filelist */
 #client-ui .file_list_item.file_list_item--redesign {
     border: 1px solid var(--border-dim);
