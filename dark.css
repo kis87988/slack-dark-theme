@@ -450,7 +450,10 @@ ts-message .action_hover_container .btn_msg_action,
 
 .ql-container .ql-editor p {
   color: var(--text);
-  background-color: var(--background-elevated);
+}
+
+#message_pane_edit_input div {
+    background-color: var(--background-elevated);
 }
 
 #quick_switcher_btn:active, #quick_switcher_btn:focus, #quick_switcher_btn:hover {
