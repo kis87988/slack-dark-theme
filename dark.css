@@ -671,6 +671,10 @@ ts-mention.ts_tip:hover
    color: var(--text);
 }
 
+.c-message__editor__emoji_circle_icon {
+    color: var(--text) !important;
+}
+
 .emoji_menu_ng #emoji_input_container,
 #emoji_menu #emoji_menu_items_scroller,
 #emoji_menu #emoji_menu_footer,
