@@ -678,10 +678,10 @@ ts-mention.ts_tip:hover
    background-color: transparent;
 }
 
-.menu .p-emoji_picker__input_container,
-.menu .p-emoji_picker__list_container,
-.menu .p-emoji_picker__heading,
-.menu .p-emoji_picker__footer {
+.p-emoji_picker__input_container,
+.p-emoji_picker__list_container,
+.p-emoji_picker__heading,
+.p-emoji_picker__footer {
    background: #444;
    color: var(--text);
 }
