@@ -159,6 +159,7 @@ ts-jumper input[type="text"],
 	/*background-color: var(--background-elevated) !important;*/
 }
 .c-member_slug--link {
+    color: var(--text-special) !important;
     background: var(--background-elevated);
 }
 
