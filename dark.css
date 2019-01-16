@@ -88,7 +88,7 @@ body:not(.loading) #team_menu:active {
    color: var(--text) !important;
 }
 
-.p-threads_footer__input {
+.p-threads_footer__input .p-message_input_field {
     background: var(--background) !important;  
 }
 
