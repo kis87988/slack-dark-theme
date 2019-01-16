@@ -88,6 +88,10 @@ body:not(.loading) #team_menu:active {
    color: var(--text) !important;
 }
 
+.p-threads_footer__input {
+    background: var(--background) !important;  
+}
+
 /* Channel with unread messages */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
