@@ -455,6 +455,7 @@ ts-message .action_hover_container .btn_msg_action,
 
 .ql-container .ql-editor p {
   color: var(--text);
+  background: var(--background) !important;
 }
 
 #message_pane_edit_input div {
