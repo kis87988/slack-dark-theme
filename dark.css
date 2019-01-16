@@ -845,7 +845,8 @@ ts-thread .thread_messages,
 }
 .p-message_pane .p-message_pane__top_banners:not(:empty)+div .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider:before, .p-message_pane .p-message_pane__top_banners:not(:empty)+div .c-message_list:not(.c-virtual_list--scrollbar):before
 {
-	box-shadow: 0 32px var(--background);
+    box-shadow: 0 32px var(--background);
+    background-color: var(--background);
 }
 ts-thread .collapse_inline_thread_container:hover,
 ts-thread .view_all_replies_container:hover {
