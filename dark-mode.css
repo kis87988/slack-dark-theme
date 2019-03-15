@@ -1657,6 +1657,8 @@ ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
 
 #convo_loading_indicator { background-image: none; }
 
+.p-message_input_field .c-texty_input--multi_line .c-texty_input .ql-container .focus { background-color: #545454; border: 1px solid #363636; }
+
 .reply_input_container .inline_message_input_container .ql-container { background-color: #545454; border: 1px solid #363636; }
 
 .reply_input_container .inline_message_input_container .ql-container .ql-editor::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, 0.15); }
@@ -2571,9 +2573,19 @@ a.c-member_slug--mention, a.c-member_slug--mention:hover { background-color: #ff
 
 #fs_modal #fs_modal_footer { background-color: #363636; }
 
+.p-threads_view__default_background { background-color: #363636 !important; }
+
+.p-threads_view_header__permalink { color: #36D4F6 !important; }
+
+.p-threads_view_header__participant_list { color: #949494 !important}
+
+.p-threads_view__divider_line { border-top: 1px solid #363636 }
+
+.p-threads_view__divider_label { background: #545454; color: #e6e6e6; }
+
 .p-apps_browser__apps_list--loading::before { background-color: #363636; }
 
-.p-apps_browser__category_section--tutorial .p-apps_browser__app { border-color: #545454; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); }
+.p-apps_browser__category_section--tutorial .p.c-channel_name-apps_browser__app { border-color: #545454; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); }
 
 .p-apps_browser__category_section--tutorial .p-apps_browser__app--selected { background: #363636; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25); }
 
