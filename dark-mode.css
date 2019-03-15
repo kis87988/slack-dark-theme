@@ -428,7 +428,9 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #message_edit_container .message_input.focus { border-color: #363636; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
 
-.ql-editor::-webkit-scrollbar-thumb { background-color: rgba(84, 84, 84, 0.5); color: #222; }
+.ql-editor { background-color: rgba(84, 84, 84, 0.5); color: #e6e6e6 !important; }
+
+.ql-editor::-webkit-scrollbar-thumb { background-color: rgba(84, 84, 84, 0.5); color: #e6e6e6 !important; }
 
 .ql-editor::-webkit-scrollbar-thumb:hover { background-color: rgba(84, 84, 84, 0.8); }
 
@@ -1657,7 +1659,7 @@ ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
 
 #convo_loading_indicator { background-image: none; }
 
-.p-message_input_field .c-texty_input--multi_line .c-texty_input .ql-container .focus { background-color: #545454; border: 1px solid #363636; }
+.p-message_input_field .c-texty_input--multi_line .c-texty_input .ql-container .focus { background-color: #545454 !important; border: 1px solid #363636; }
 
 .reply_input_container .inline_message_input_container .ql-container { background-color: #545454; border: 1px solid #363636; }
 
@@ -2400,6 +2402,10 @@ span.match { background: rgba(191, 54, 12, 0.25); }
 ts-message.message:hover, ts-message.message:active, ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator), ts-message.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator) { background-color: #222222; }
 
 ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_container:hover { background-color: #222222; }
+
+.p_threads_view_load_older_button:hover { background-color: #222222 !important; }
+
+.p_threads_view_load_older_button { background-color: #545454 !important; }
 
 #whats_new_tab p { color: #e6e6e6; }
 
